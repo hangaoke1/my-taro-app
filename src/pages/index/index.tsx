@@ -18,7 +18,7 @@ export default function Index () {
 
   return (
     <View className='index'>
-      <Text>Hello world!</Text>
+      <Text className='text-blue-500'>Hello world!</Text>
       <Button onClick={hanldeClick}>第一个按钮</Button>
       <Counter />
       <Navigator url='/pages/about/index'>关于我们</Navigator>
