@@ -1,8 +1,9 @@
+import { countAtom } from '@/store/count'
 import { Button, View } from '@tarojs/components'
-import { useState } from 'react'
+import { useAtom } from 'jotai'
 
 const Counter = () => {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useAtom(countAtom)
 
   const handlePlus = () => {
     setCount(pre => pre + 1)
